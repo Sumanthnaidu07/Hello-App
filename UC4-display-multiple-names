@@ -1,0 +1,20 @@
+public class HelloApp {
+
+    public static void main(String[] args) {
+
+        String greeting;
+
+        // Check if any arguments are passed
+        if (args.length > 0) {
+            // Join all names with comma and space
+            String names = String.join(", ", args);
+            greeting = "Hello, " + names + "!";
+        } else {
+            // Default value when no arguments are provided
+            greeting = "Hello, World!";
+        }
+
+        // Display the greeting
+        System.out.println(greeting);
+    }
+}
